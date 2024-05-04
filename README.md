@@ -155,7 +155,7 @@ No known bugs at this time.
 
 ## Authors
 Diana Wangui - [Github](https://github.com/DianaWangui) / 
-Dan Kahia - [Github]() / 
+Dan Kahia - [Github](https://github.com/DANKAHIA) / 
 
 
 Second part of Airbnb: Joann Vuong
