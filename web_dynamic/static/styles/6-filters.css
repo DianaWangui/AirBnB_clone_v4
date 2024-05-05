@@ -45,10 +45,12 @@ button:hover {
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
+    position: relative;
 }
 .amenities {
     height: 100%;
     width: 25%;
+    position: relative;
 }
 
 .popover {
@@ -62,6 +64,8 @@ button:hover {
     overflow-y: scroll;
     scrollbar-width: none;
     max-height: 300px;
+    position: absolute;
+    top: 100%;
 }
 
 .popover::-webkit-scrollbar{
