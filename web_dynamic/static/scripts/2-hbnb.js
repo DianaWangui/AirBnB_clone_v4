@@ -1,4 +1,6 @@
-$(document).ready(function() {
+$(document).ready(init); 
+const HOST = '54.237.118.67';
+function init(){
     const amenitiesChecked = {}; 
     $('input[type="checkbox"]').change(function() {
         const amenityId = $(this).data('id');
@@ -17,7 +19,11 @@ $(document).ready(function() {
         }
         $('.amenities h4').text(amenitiesList);
     });
-    const url = 'http://localhost:5001/api/v1/status/'
+    apiStatus();     
+}
+
+function apiStatus() {
+    const url = `http://${HOST}:5001/api/v1/status/`
     $.get(url, function(response) {
         if (response.status === 'OK') {
             $('div#api_status').addClass('available');
@@ -25,4 +31,5 @@ $(document).ready(function() {
             $('div#api_status').removeClass('available');
         }
     });
-});
+}
+
